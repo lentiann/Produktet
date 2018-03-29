@@ -10,7 +10,7 @@ Project includes basic operations in Laravel as in the following.
 
 Project has Controller named ProductsController which contains methods to make RESTful API.
 
-//This route is used to get data as JSON format.
+  //This route is used to get data as JSON format.
   Route::get('/products','ProductsController@getProducts');
   
   // This route is used to insert data in DB and back it as JSON.
