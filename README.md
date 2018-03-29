@@ -1,6 +1,11 @@
 # Products
 Project includes basic operations in Laravel as in the following.
 
+Cloning of project can be done using Github or SourceTree using following command
+Git clone https://github.com/lentiann/Produktet.git and to save in local enviroment.
+
+Setup of project in local machine isn't hard part we need to use XAMPP or WAMPP as server to save databases, project needs to be in HTDOCS in XAMPP or WAMPP, another solution is to use php artisan:serve which is replace for XAMPP or WAMPP as server.
+
 -Routing
 -Migrations
 -Models
@@ -10,15 +15,6 @@ Project includes basic operations in Laravel as in the following.
 
 Project has Controller named ProductsController which contains methods to make RESTful API.
 
-  //This route is used to get data as JSON format.
-  Route::get('/products','ProductsController@getProducts');
-  
-  // This route is used to insert data in DB and back it as JSON.
-  Route::post('/addProduct','ProductsController@addProduct');
-  
-  // This Route is used to view specific Product with ID
-  Route::get('/viewProduct/{id}','ProductsController@viewProduct');
-  
-  // This route is used to delete specific Product with ID
-  Route::delete('/deleteProduct/{id}','ProductsController@deleteProduct');
-
+- method GET path /products should get list of all products
+- method GET path /viewProduct/1 should get detail of product 1
+- method DELETE path /deleteProduct/1 should delete product 1
