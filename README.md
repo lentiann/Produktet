@@ -5,9 +5,13 @@ Cloning of project can be done using Github Shell or Git Bash using following co
 Git clone https://github.com/lentiann/Produktet.git and to save in local enviroment.
 
 Steps mentioned below will be solution to work application:
+
  -copy .env.example .env and change DB name, DB username and DB password.
+ 
  -composer update and wait untill finishing it.
+ 
  -php artisan key:generate to generate key for application.
+ 
  -php artisan serve to server project.
 
 Setup of project in local machine isn't hard part we need to use XAMPP or WAMPP as server to save databases, project needs to be in HTDOCS in XAMPP or WAMPP, another solution is to use php artisan serve which is replace for XAMPP or WAMPP as server.
