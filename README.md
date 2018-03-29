@@ -12,6 +12,7 @@ Project has Controller named ProductsController which contains methods to make R
 
 //This route is used to get data as JSON format.
   Route::get('/products','ProductsController@getProducts');
+  
   // This route is used to insert data in DB and back it as JSON.
   Route::post('/addProduct','ProductsController@addProduct');
   
